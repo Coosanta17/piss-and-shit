@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "piss_and_shit:poop"
+    },
+    {
+      "item": "piss_and_shit:poop"
+    },
+    {
+      "item": "piss_and_shit:poop"
+    },
+    {
+      "item": "piss_and_shit:poop"
+    }
+  ],
+  "result": {
+    "item": "piss_and_shit:block_of_shit",
+    "count": 1
+  }
+}

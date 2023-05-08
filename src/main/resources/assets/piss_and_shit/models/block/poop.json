@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "piss_and_shit:blocks/poop_placeholder",
+    "particle": "piss_and_shit:blocks/poop_placeholder"
+  }
+}

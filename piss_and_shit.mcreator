@@ -1,0 +1,552 @@
+{
+  "mod_elements": [
+    {
+      "name": "Poop",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poop",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/piss_and_shit/models/item/poop.json",
+          "src/main/java/net/mcreator/coosanta/pissandshit/block/PoopBlock.java",
+          "src/main/resources/assets/piss_and_shit/blockstates/poop.json",
+          "src/main/resources/assets/piss_and_shit/models/block/poop.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Toilet",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toilet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/coosanta/pissandshit/block/ToiletBlock.java",
+          "src/main/resources/assets/piss_and_shit/models/item/toilet.json",
+          "src/main/resources/assets/piss_and_shit/blockstates/toilet.json",
+          "src/main/java/net/mcreator/coosanta/pissandshit/block/entity/ToiletBlockEntity.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "PissAndShitItemsAndBlocks",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "piss_and_shit_items_and_blocks",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Piss",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "piss",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/coosanta/pissandshit/client/particle/PissParticle.java",
+          "src/main/resources/assets/piss_and_shit/particles/piss.json"
+        ]
+      },
+      "path": "~/Pissing and Shitting"
+    },
+    {
+      "name": "PoopBar0",
+      "type": "gui",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poop_bar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/coosanta/pissandshit/world/inventory/PoopBar0Menu.java",
+          "src/main/java/net/mcreator/coosanta/pissandshit/client/gui/PoopBar0Screen.java"
+        ]
+      },
+      "path": "~/Urge to poop"
+    },
+    {
+      "name": "PoopBarCondition0",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poop_bar_condition_0",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/coosanta/pissandshit/procedures/PoopBarCondition0Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Urge to poop"
+    },
+    {
+      "name": "PoopBarCondition1",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poop_bar_condition_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/coosanta/pissandshit/procedures/PoopBarCondition1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Urge to poop"
+    },
+    {
+      "name": "PoopBarCondition2",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poop_bar_condition_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/coosanta/pissandshit/procedures/PoopBarCondition2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Urge to poop"
+    },
+    {
+      "name": "PoopBarCondition3",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poop_bar_condition_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/coosanta/pissandshit/procedures/PoopBarCondition3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Urge to poop"
+    },
+    {
+      "name": "PoopBarCondition4",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poop_bar_condition_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/coosanta/pissandshit/procedures/PoopBarCondition4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Urge to poop"
+    },
+    {
+      "name": "PoopBarCondition5",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poop_bar_condition_5",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/coosanta/pissandshit/procedures/PoopBarCondition5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Urge to poop"
+    },
+    {
+      "name": "PoopBarCondition6",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poop_bar_condition_6",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/coosanta/pissandshit/procedures/PoopBarCondition6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Urge to poop"
+    },
+    {
+      "name": "PoopBarCondition7",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poop_bar_condition_7",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/coosanta/pissandshit/procedures/PoopBarCondition7Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Urge to poop"
+    },
+    {
+      "name": "PoopBarCondition8",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poop_bar_condition_8",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/coosanta/pissandshit/procedures/PoopBarCondition8Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Urge to poop"
+    },
+    {
+      "name": "PoopBarCondition9",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poop_bar_condition_9",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/coosanta/pissandshit/procedures/PoopBarCondition9Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Urge to poop"
+    },
+    {
+      "name": "PoopBarCondition10",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poop_bar_condition_10",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/coosanta/pissandshit/procedures/PoopBarCondition10Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Urge to poop"
+    },
+    {
+      "name": "EatFoodAndMakePoopToActivatePoopBarIncreaseProcedureInvisible",
+      "type": "achievement",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eat_food_and_make_poop_to_activate_poop_bar_increase_procedure_invisible",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/piss_and_shit/advancements/eat_food_and_make_poop_to_activate_poop_bar_increase_procedure_invisible.json"
+        ]
+      },
+      "path": "~/Urge to poop"
+    },
+    {
+      "name": "IncreasePoopBar",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "increase_poop_bar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/coosanta/pissandshit/procedures/IncreasePoopBarProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Urge to poop"
+    },
+    {
+      "name": "PenaltyForTooMuchPoop",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "penalty_for_too_much_poop",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/coosanta/pissandshit/procedures/PenaltyForTooMuchPoopProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Pissing and Shitting"
+    },
+    {
+      "name": "PlayerJoinedServerPreviouslyPoopCheck",
+      "type": "achievement",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_joined_server_previously_poop_check",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/piss_and_shit/advancements/player_joined_server_previously_poop_check.json"
+        ]
+      },
+      "path": "~/Pissing and Shitting"
+    },
+    {
+      "name": "SetInitPoopAmount",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_init_poop_amount",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/coosanta/pissandshit/procedures/SetInitPoopAmountProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Pissing and Shitting"
+    },
+    {
+      "name": "ToiletCrafting",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toilet_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/piss_and_shit/recipes/toilet_crafting.json"
+        ]
+      },
+      "path": "~/Blocks/Recepies"
+    },
+    {
+      "name": "BlockOfShit",
+      "type": "block",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_of_shit",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/piss_and_shit/models/item/block_of_shit.json",
+          "src/main/java/net/mcreator/coosanta/pissandshit/block/BlockOfShitBlock.java",
+          "src/main/resources/assets/piss_and_shit/blockstates/block_of_shit.json",
+          "src/main/resources/assets/piss_and_shit/models/block/block_of_shit.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "BlockOfDriedShit",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_of_dried_shit",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/piss_and_shit/blockstates/block_of_dried_shit.json",
+          "src/main/resources/assets/piss_and_shit/models/item/block_of_dried_shit.json",
+          "src/main/resources/assets/piss_and_shit/models/block/block_of_dried_shit.json",
+          "src/main/java/net/mcreator/coosanta/pissandshit/block/BlockOfDriedShitBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "PoopBlockCrafting",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poop_block_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/piss_and_shit/recipes/poop_block_crafting.json"
+        ]
+      },
+      "path": "~/Blocks/Recepies"
+    },
+    {
+      "name": "DriedPoopSmelting",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dried_poop_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/piss_and_shit/recipes/dried_poop_smelting.json"
+        ]
+      },
+      "path": "~/Blocks/Recepies"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "poop_amount",
+      "type": "number",
+      "scope": "map",
+      "value": "0.0"
+    },
+    {
+      "name": "playerfoodamountbeforeeat_usedforincreaseingfoodamount",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "PlayersJoinedPreviously",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.piss_and_shit.block_of_shit": "Block of Shit",
+      "block.piss_and_shit.toilet": "Toilet",
+      "block.piss_and_shit.poop": "Poop",
+      "itemGroup.piss_and_shit.piss_and_shit_items_and_blocks": "Piss and Shit Items and Blocks",
+      "advancements.player_joined_server_previously_poop_check.descr": "check if player has joined the game before",
+      "advancements.eat_food_and_make_poop_to_activate_poop_bar_increase_procedure_invisible.descr": "This is to activate the procedure that increases the poop bar, this should be invisible",
+      "advancements.player_joined_server_previously_poop_check.title": "Player Joined Server Previously Poop Check",
+      "block.piss_and_shit.block_of_dried_shit": "Block of Dried Shit",
+      "advancements.eat_food_and_make_poop_to_activate_poop_bar_increase_procedure_invisible.title": "Eat Food And Make Poop To Activate Poop Bar Increase Procedure Invisible"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Urge to poop",
+        "children": []
+      },
+      {
+        "name": "Blocks",
+        "children": [
+          {
+            "name": "Recepies",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Pissing and Shitting",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "piss_and_shit",
+    "modName": "Piss and Shit",
+    "version": "1.0.0",
+    "author": "coosa, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "fabric-1.19.2",
+    "modElementsPackage": "net.mcreator.coosanta.pissandshit",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300110610
+}

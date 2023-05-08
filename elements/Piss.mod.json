@@ -1,0 +1,21 @@
+{
+  "_fv": 39,
+  "_type": "particle",
+  "definition": {
+    "texture": "piss.png",
+    "animate": false,
+    "frameDuration": 1,
+    "width": 0.125,
+    "height": 0.125,
+    "scale": 1.0,
+    "speedFactor": 1.0,
+    "gravity": 1.0,
+    "maxAge": 7,
+    "maxAgeDiff": 0,
+    "angularVelocity": 0.5,
+    "angularAcceleration": 0.0,
+    "canCollide": true,
+    "alwaysShow": true,
+    "renderType": "OPAQUE"
+  }
+}

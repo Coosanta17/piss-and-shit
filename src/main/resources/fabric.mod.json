@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "piss_and_shit",
+  "version": "1.0.0",
+  "name": "Piss and Shit",
+  "authors": [
+    "coosa, MCreator"
+  ],
+  "contact": {
+    "homepage": "https://mcreator.net",
+    "sources": ""
+  },
+  "license": "Academic Free License v3.0",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.mcreator.coosanta.pissandshit.PissAndShitMod"
+    ],
+    "client": [
+      "net.mcreator.coosanta.pissandshit.ClientInit"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "mixins": [
+    "piss_and_shit.mixins.json"
+  ]
+}

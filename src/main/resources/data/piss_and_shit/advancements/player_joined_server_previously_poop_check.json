@@ -1,0 +1,8 @@
+{
+  "criteria": {
+    "player_joined_server_previously_poop_check": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "piss_and_shit:eat_food_and_make_poop_to_activate_poop_bar_increase_procedure_invisible"
+}

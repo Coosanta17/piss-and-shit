@@ -1,0 +1,11 @@
+{
+  "block.piss_and_shit.block_of_shit": "Block of Shit",
+  "block.piss_and_shit.toilet": "Toilet",
+  "block.piss_and_shit.poop": "Poop",
+  "itemGroup.piss_and_shit.piss_and_shit_items_and_blocks": "Piss and Shit Items and Blocks",
+  "advancements.player_joined_server_previously_poop_check.descr": "check if player has joined the game before",
+  "advancements.eat_food_and_make_poop_to_activate_poop_bar_increase_procedure_invisible.descr": "This is to activate the procedure that increases the poop bar, this should be invisible",
+  "advancements.player_joined_server_previously_poop_check.title": "Player Joined Server Previously Poop Check",
+  "block.piss_and_shit.block_of_dried_shit": "Block of Dried Shit",
+  "advancements.eat_food_and_make_poop_to_activate_poop_bar_increase_procedure_invisible.title": "Eat Food And Make Poop To Activate Poop Bar Increase Procedure Invisible"
+}

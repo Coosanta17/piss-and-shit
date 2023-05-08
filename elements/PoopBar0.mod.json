@@ -1,0 +1,151 @@
+{
+  "_fv": 39,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 25,
+    "height": 25,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "poop_empty.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PoopBarCondition0"
+          },
+          "x": 204,
+          "y": 197
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "poop_lvl_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PoopBarCondition1"
+          },
+          "x": 204,
+          "y": 197
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "poop_lvl_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PoopBarCondition2"
+          },
+          "x": 204,
+          "y": 197
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "poop_lvl_3.png",
+          "use1Xscale": false,
+          "x": 204,
+          "y": 197
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "poop_lvl_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PoopBarCondition4"
+          },
+          "x": 204,
+          "y": 197
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "poop_lvl_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PoopBarCondition5"
+          },
+          "x": 204,
+          "y": 197
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "poop_lvl_6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PoopBarCondition6"
+          },
+          "x": 204,
+          "y": 197
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "poop_lvl_7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PoopBarCondition7"
+          },
+          "x": 204,
+          "y": 197
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "poop_lvl_8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PoopBarCondition8"
+          },
+          "x": 204,
+          "y": 197
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "poop_lvl_9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PoopBarCondition9"
+          },
+          "x": 204,
+          "y": 197
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "poop_lvl_10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PoopBarCondition10"
+          },
+          "x": 204,
+          "y": 197
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

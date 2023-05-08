@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "_10778_Toilet_V201___Default": "toilet"
+      },
+      "name": "default"
+    }
+  }
+}
