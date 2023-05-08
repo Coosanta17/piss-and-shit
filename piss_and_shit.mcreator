@@ -473,6 +473,20 @@
         ]
       },
       "path": "~/Blocks/Recepies"
+    },
+    {
+      "name": "DriedPoopSmoking",
+      "type": "recipe",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dried_poop_smoking",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/piss_and_shit/recipes/dried_poop_smoking.json"
+        ]
+      },
+      "path": "~/Blocks/Recepies"
     }
   ],
   "variable_elements": [
