@@ -6,6 +6,8 @@
   "advancements.player_joined_server_previously_poop_check.descr": "check if player has joined the game before",
   "advancements.eat_food_and_make_poop_to_activate_poop_bar_increase_procedure_invisible.descr": "This is to activate the procedure that increases the poop bar, this should be invisible",
   "advancements.player_joined_server_previously_poop_check.title": "Player Joined Server Previously Poop Check",
+  "item.piss_and_shit.dried_shit_brick": "Dried Shit Brick",
   "block.piss_and_shit.block_of_dried_shit": "Block of Dried Shit",
-  "advancements.eat_food_and_make_poop_to_activate_poop_bar_increase_procedure_invisible.title": "Eat Food And Make Poop To Activate Poop Bar Increase Procedure Invisible"
+  "advancements.eat_food_and_make_poop_to_activate_poop_bar_increase_procedure_invisible.title": "Eat Food And Make Poop To Activate Poop Bar Increase Procedure Invisible",
+  "block.piss_and_shit.dried_shit_bricks": "Dried Shit Bricks"
 }

@@ -15,7 +15,7 @@
           "src/main/resources/assets/piss_and_shit/models/block/poop.json"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks and Items"
     },
     {
       "name": "Toilet",
@@ -32,7 +32,7 @@
           "src/main/java/net/mcreator/coosanta/pissandshit/block/entity/ToiletBlockEntity.java"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks and Items"
     },
     {
       "name": "PissAndShitItemsAndBlocks",
@@ -43,7 +43,7 @@
       "metadata": {
         "files": []
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks and Items"
     },
     {
       "name": "Piss",
@@ -410,7 +410,7 @@
           "src/main/resources/data/piss_and_shit/recipes/toilet_crafting.json"
         ]
       },
-      "path": "~/Blocks/Recepies"
+      "path": "~/Blocks and Items/Recepies"
     },
     {
       "name": "BlockOfShit",
@@ -427,7 +427,7 @@
           "src/main/resources/assets/piss_and_shit/models/block/block_of_shit.json"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks and Items"
     },
     {
       "name": "BlockOfDriedShit",
@@ -444,7 +444,7 @@
           "src/main/java/net/mcreator/coosanta/pissandshit/block/BlockOfDriedShitBlock.java"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks and Items"
     },
     {
       "name": "PoopBlockCrafting",
@@ -458,7 +458,7 @@
           "src/main/resources/data/piss_and_shit/recipes/poop_block_crafting.json"
         ]
       },
-      "path": "~/Blocks/Recepies"
+      "path": "~/Blocks and Items/Recepies"
     },
     {
       "name": "DriedPoopSmelting",
@@ -472,7 +472,7 @@
           "src/main/resources/data/piss_and_shit/recipes/dried_poop_smelting.json"
         ]
       },
-      "path": "~/Blocks/Recepies"
+      "path": "~/Blocks and Items/Recepies"
     },
     {
       "name": "DriedPoopSmoking",
@@ -486,7 +486,95 @@
           "src/main/resources/data/piss_and_shit/recipes/dried_poop_smoking.json"
         ]
       },
-      "path": "~/Blocks/Recepies"
+      "path": "~/Blocks and Items/Recepies"
+    },
+    {
+      "name": "DriedShitBricks",
+      "type": "block",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dried_shit_bricks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/piss_and_shit/blockstates/dried_shit_bricks.json",
+          "src/main/resources/assets/piss_and_shit/models/block/dried_shit_bricks.json",
+          "src/main/resources/assets/piss_and_shit/models/item/dried_shit_bricks.json",
+          "src/main/java/net/mcreator/coosanta/pissandshit/block/DriedShitBricksBlock.java"
+        ]
+      },
+      "path": "~/Blocks and Items"
+    },
+    {
+      "name": "DriedShitBrick",
+      "type": "item",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dried_shit_brick",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/piss_and_shit/models/item/dried_shit_brick.json",
+          "src/main/java/net/mcreator/coosanta/pissandshit/item/DriedShitBrickItem.java"
+        ]
+      },
+      "path": "~/Blocks and Items"
+    },
+    {
+      "name": "DriedShitBrickCrafting",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dried_shit_brick_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/piss_and_shit/recipes/dried_shit_brick_smelting.json"
+        ]
+      },
+      "path": "~/Blocks and Items/Recepies"
+    },
+    {
+      "name": "DriedShitBrickSmoking",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dried_shit_brick_smoking",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/piss_and_shit/recipes/dried_shit_brick_smoking.json"
+        ]
+      },
+      "path": "~/Blocks and Items/Recepies"
+    },
+    {
+      "name": "DriedShitBrickStonecutting",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dried_shit_brick_stonecutting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/piss_and_shit/recipes/dried_shit_brick_stonecutting.json"
+        ]
+      },
+      "path": "~/Blocks and Items/Recepies"
+    },
+    {
+      "name": "DriedShitBricksCrafting",
+      "type": "recipe",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dried_shit_bricks_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/piss_and_shit/recipes/dried_shit_bricks_crafting.json"
+        ]
+      },
+      "path": "~/Blocks and Items/Recepies"
     }
   ],
   "variable_elements": [
@@ -519,8 +607,10 @@
       "advancements.player_joined_server_previously_poop_check.descr": "check if player has joined the game before",
       "advancements.eat_food_and_make_poop_to_activate_poop_bar_increase_procedure_invisible.descr": "This is to activate the procedure that increases the poop bar, this should be invisible",
       "advancements.player_joined_server_previously_poop_check.title": "Player Joined Server Previously Poop Check",
+      "item.piss_and_shit.dried_shit_brick": "Dried Shit Brick",
       "block.piss_and_shit.block_of_dried_shit": "Block of Dried Shit",
-      "advancements.eat_food_and_make_poop_to_activate_poop_bar_increase_procedure_invisible.title": "Eat Food And Make Poop To Activate Poop Bar Increase Procedure Invisible"
+      "advancements.eat_food_and_make_poop_to_activate_poop_bar_increase_procedure_invisible.title": "Eat Food And Make Poop To Activate Poop Bar Increase Procedure Invisible",
+      "block.piss_and_shit.dried_shit_bricks": "Dried Shit Bricks"
     }
   },
   "foldersRoot": {
@@ -531,7 +621,7 @@
         "children": []
       },
       {
-        "name": "Blocks",
+        "name": "Blocks and Items",
         "children": [
           {
             "name": "Recepies",

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 4,
+  "ingredient": {
+    "item": "piss_and_shit:block_of_dried_shit"
+  },
+  "result": "piss_and_shit:dried_shit_brick"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "piss_and_shit:dried_shit_brick"
+    },
+    {
+      "item": "piss_and_shit:dried_shit_brick"
+    },
+    {
+      "item": "piss_and_shit:dried_shit_brick"
+    },
+    {
+      "item": "piss_and_shit:dried_shit_brick"
+    }
+  ],
+  "result": {
+    "item": "piss_and_shit:dried_shit_bricks",
+    "count": 1
+  }
+}

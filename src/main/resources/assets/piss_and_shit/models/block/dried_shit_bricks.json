@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "piss_and_shit:blocks/dried_shit_bricks",
+    "particle": "piss_and_shit:blocks/dried_shit_bricks"
+  }
+}
