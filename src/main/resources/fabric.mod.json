@@ -3,14 +3,16 @@
   "id": "piss_and_shit",
   "version": "1.0.0",
   "name": "Piss and Shit",
+  "description": "Adds piss and shit to Minecraft, an idea so stupid that it actually sounds cool!",
   "authors": [
-    "coosa, MCreator"
+    "Coosanta, MCreator"
   ],
   "contact": {
     "homepage": "https://mcreator.net",
     "sources": ""
   },
   "license": "Academic Free License v3.0",
+  "icon": "assets/piss_and_shit/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
