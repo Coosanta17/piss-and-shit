@@ -4,7 +4,7 @@
       "name": "Poop",
       "type": "block",
       "sortid": 2,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "poop",
       "metadata": {
@@ -381,7 +381,7 @@
       "name": "SetInitPoopAmount",
       "type": "procedure",
       "sortid": 20,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "set_init_poop_amount",
       "metadata": {
@@ -600,17 +600,18 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.piss_and_shit.block_of_shit": "Block of Shit",
       "block.piss_and_shit.toilet": "Toilet",
+      "advancements.eat_food_and_make_poop_to_activate_poop_bar_increase_procedure_invisible.descr": "This is to activate the procedure that increases the poop bar, this should be invisible",
+      "item.piss_and_shit.dried_shit_brick": "Dried Shit Brick",
+      "advancements.eat_food_and_make_poop_to_activate_poop_bar_increase_procedure_invisible.title": "Eat Food And Make Poop To Activate Poop Bar Increase Procedure Invisible",
+      "block.piss_and_shit.dried_shit_bricks": "Dried Shit Bricks",
+      "block.piss_and_shit.block_of_shit": "Block of Shit",
+      "item_group.piss_and_shit.piss_and_shit_items_and_blocks": "Piss and Shit Items and Blocks",
       "block.piss_and_shit.poop": "Poop",
       "itemGroup.piss_and_shit.piss_and_shit_items_and_blocks": "Piss and Shit Items and Blocks",
       "advancements.player_joined_server_previously_poop_check.descr": "check if player has joined the game before",
-      "advancements.eat_food_and_make_poop_to_activate_poop_bar_increase_procedure_invisible.descr": "This is to activate the procedure that increases the poop bar, this should be invisible",
       "advancements.player_joined_server_previously_poop_check.title": "Player Joined Server Previously Poop Check",
-      "item.piss_and_shit.dried_shit_brick": "Dried Shit Brick",
-      "block.piss_and_shit.block_of_dried_shit": "Block of Dried Shit",
-      "advancements.eat_food_and_make_poop_to_activate_poop_bar_increase_procedure_invisible.title": "Eat Food And Make Poop To Activate Poop Bar Increase Procedure Invisible",
-      "block.piss_and_shit.dried_shit_bricks": "Dried Shit Bricks"
+      "block.piss_and_shit.block_of_dried_shit": "Block of Dried Shit"
     }
   },
   "foldersRoot": {
@@ -650,10 +651,10 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "fabric-1.19.2",
+    "currentGenerator": "fabric-1.20.1",
     "credits": "Created using mod maker MCreator and MCrator fabric generator - https://mcreator.net/about. Made by Coosanta",
     "modElementsPackage": "net.mcreator.coosanta.pissandshit",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202300110610
+  "mcreatorVersion": 202300224119
 }

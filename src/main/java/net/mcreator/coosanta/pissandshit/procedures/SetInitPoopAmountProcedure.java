@@ -16,7 +16,6 @@ import net.mcreator.coosanta.pissandshit.PissAndShitMod;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
 
 import java.util.Map;
-import java.util.Iterator;
 import java.util.HashMap;
 
 public class SetInitPoopAmountProcedure {
@@ -27,7 +26,7 @@ public class SetInitPoopAmountProcedure {
 			dependencies.put("x", handler.getPlayer().getX());
 			dependencies.put("y", handler.getPlayer().getY());
 			dependencies.put("z", handler.getPlayer().getZ());
-			dependencies.put("world", handler.getPlayer().getLevel());
+			dependencies.put("world", handler.getPlayer().level());
 			execute(dependencies);
 		});
 	}
@@ -39,12 +38,11 @@ public class SetInitPoopAmountProcedure {
 			return false;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if (!(entity instanceof ServerPlayer _plr && _plr.level instanceof ServerLevel
-				? _plr.getAdvancements().getOrStartProgress(_plr.server.getAdvancements().getAdvancement(new ResourceLocation("piss_and_shit:player_joined_server_previously_poop_check"))).isDone()
-				: false)) {
+		if (!(entity instanceof ServerPlayer _plr0 && _plr0.level instanceof ServerLevel
+				&& _plr0.getAdvancements().getOrStartProgress(_plr0.server.getAdvancements().getAdvancement(new ResourceLocation("piss_and_shit:player_joined_server_previously_poop_check"))).isDone())) {
 			{
 				Entity _ent = entity;
-				Scoreboard _sc = _ent.getLevel().getScoreboard();
+				Scoreboard _sc = _ent.level().getScoreboard();
 				Objective _so = _sc.getObjective("poop_amount");
 				if (_so == null)
 					_so = _sc.addObjective("poop_amount", ObjectiveCriteria.DUMMY, Component.literal("poop_amount"), ObjectiveCriteria.RenderType.INTEGER);
@@ -54,9 +52,8 @@ public class SetInitPoopAmountProcedure {
 				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("piss_and_shit:player_joined_server_previously_poop_check"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 				if (!_ap.isDone()) {
-					Iterator _iterator = _ap.getRemainingCriteria().iterator();
-					while (_iterator.hasNext())
-						_player.getAdvancements().award(_adv, (String) _iterator.next());
+					for (String criteria : _ap.getRemainingCriteria())
+						_player.getAdvancements().award(_adv, criteria);
 				}
 			}
 			return true;

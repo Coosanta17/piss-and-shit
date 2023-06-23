@@ -1,8 +1,7 @@
 
 package net.mcreator.coosanta.pissandshit.block;
 
-import net.minecraft.world.level.storage.loot.LootContext;
-import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
@@ -25,7 +24,6 @@ import net.minecraft.client.renderer.RenderType;
 
 import net.mcreator.coosanta.pissandshit.init.PissAndShitModBlocks;
 
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.api.Environment;
 import net.fabricmc.api.EnvType;
@@ -34,7 +32,7 @@ import java.util.List;
 import java.util.Collections;
 
 public class PoopBlock extends Block implements SimpleWaterloggedBlock {
-	public static BlockBehaviour.Properties PROPERTIES = FabricBlockSettings.of(Material.PLANT).sound(SoundType.GRAVEL).strength(1f, 10f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).offsetType(OffsetType.XZ);
+	public static BlockBehaviour.Properties PROPERTIES = BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(1f, 10f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).offsetType(OffsetType.XZ);
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	public PoopBlock() {
@@ -66,7 +64,7 @@ public class PoopBlock extends Block implements SimpleWaterloggedBlock {
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		boolean flag = context.getLevel().getFluidState(context.getClickedPos()).getType() == Fluids.WATER;
+		boolean flag = context.level().getFluidState(context.getClickedPos()).getType() == Fluids.WATER;
 		return this.defaultBlockState().setValue(WATERLOGGED, flag);
 	}
 
@@ -84,7 +82,7 @@ public class PoopBlock extends Block implements SimpleWaterloggedBlock {
 	}
 
 	@Override
-	public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;

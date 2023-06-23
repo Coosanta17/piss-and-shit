@@ -50,7 +50,7 @@ public class IncreasePoopBarProcedure {
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem().isEdible() || (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem().isEdible()) {
 			{
 				Entity _ent = entity;
-				Scoreboard _sc = _ent.getLevel().getScoreboard();
+				Scoreboard _sc = _ent.level().getScoreboard();
 				Objective _so = _sc.getObjective("player_food_amount");
 				if (_so == null)
 					_so = _sc.addObjective("player_food_amount", ObjectiveCriteria.DUMMY, Component.literal("player_food_amount"), ObjectiveCriteria.RenderType.INTEGER);
@@ -65,7 +65,7 @@ public class IncreasePoopBarProcedure {
 						if (this.ticks == 66) {
 							if (new Object() {
 								public int getScore(String score, Entity _ent) {
-									Scoreboard _sc = _ent.getLevel().getScoreboard();
+									Scoreboard _sc = _ent.level().getScoreboard();
 									Objective _so = _sc.getObjective(score);
 									if (_so != null)
 										return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
@@ -73,7 +73,7 @@ public class IncreasePoopBarProcedure {
 								}
 							}.getScore("poop_amount", entity) <= 10 && new Object() {
 								public int getScore(String score, Entity _ent) {
-									Scoreboard _sc = _ent.getLevel().getScoreboard();
+									Scoreboard _sc = _ent.level().getScoreboard();
 									Objective _so = _sc.getObjective(score);
 									if (_so != null)
 										return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
@@ -82,13 +82,13 @@ public class IncreasePoopBarProcedure {
 							}.getScore("player_food_amount", entity) < (entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0)) {
 								{
 									Entity _ent = entity;
-									Scoreboard _sc = _ent.getLevel().getScoreboard();
+									Scoreboard _sc = _ent.level().getScoreboard();
 									Objective _so = _sc.getObjective("poop_amount");
 									if (_so == null)
 										_so = _sc.addObjective("poop_amount", ObjectiveCriteria.DUMMY, Component.literal("poop_amount"), ObjectiveCriteria.RenderType.INTEGER);
 									_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore((int) (new Object() {
 										public int getScore(String score, Entity _ent) {
-											Scoreboard _sc = _ent.getLevel().getScoreboard();
+											Scoreboard _sc = _ent.level().getScoreboard();
 											Objective _so = _sc.getObjective(score);
 											if (_so != null)
 												return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
@@ -96,7 +96,7 @@ public class IncreasePoopBarProcedure {
 										}
 									}.getScore("player_food_amount", entity) + ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) - new Object() {
 										public int getScore(String score, Entity _ent) {
-											Scoreboard _sc = _ent.getLevel().getScoreboard();
+											Scoreboard _sc = _ent.level().getScoreboard();
 											Objective _so = _sc.getObjective(score);
 											if (_so != null)
 												return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();

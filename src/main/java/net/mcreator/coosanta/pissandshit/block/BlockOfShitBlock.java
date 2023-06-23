@@ -4,9 +4,7 @@ package net.mcreator.coosanta.pissandshit.block;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.level.storage.loot.LootContext;
-import net.minecraft.world.level.material.MaterialColor;
-import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
@@ -20,7 +18,6 @@ import net.minecraft.client.renderer.RenderType;
 
 import net.mcreator.coosanta.pissandshit.init.PissAndShitModBlocks;
 
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.api.Environment;
 import net.fabricmc.api.EnvType;
@@ -29,8 +26,7 @@ import java.util.List;
 import java.util.Collections;
 
 public class BlockOfShitBlock extends Block {
-	public static BlockBehaviour.Properties PROPERTIES = FabricBlockSettings.of(Material.DIRT, MaterialColor.PODZOL).sound(SoundType.SLIME_BLOCK).strength(0.75f, 2.5f).friction(0.75f).jumpFactor(0.75f).noOcclusion()
-			.isRedstoneConductor((bs, br, bp) -> false);
+	public static BlockBehaviour.Properties PROPERTIES = BlockBehaviour.Properties.of().sound(SoundType.SLIME_BLOCK).strength(0.75f, 2.5f).friction(0.75f).jumpFactor(0.75f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false);
 
 	public BlockOfShitBlock() {
 		super(PROPERTIES);
@@ -55,7 +51,7 @@ public class BlockOfShitBlock extends Block {
 	}
 
 	@Override
-	public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;

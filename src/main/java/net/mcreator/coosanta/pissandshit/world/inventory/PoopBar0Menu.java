@@ -37,7 +37,7 @@ public class PoopBar0Menu extends AbstractContainerMenu {
 	public PoopBar0Menu(int id, Inventory inv, Container container) {
 		super(PissAndShitModMenus.POOP_BAR, id);
 		this.entity = inv.player;
-		this.world = inv.player.level;
+		this.world = inv.player.level();
 		this.inventory = container;
 	}
 
@@ -49,5 +49,8 @@ public class PoopBar0Menu extends AbstractContainerMenu {
 	@Override
 	public ItemStack quickMoveStack(Player player, int slot) {
 		return ItemStack.EMPTY;
+	}
+
+	public static void screenInit() {
 	}
 }

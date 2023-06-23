@@ -25,7 +25,7 @@ public class ClientInit implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
 
-		PissAndShitModParticleTypes.load();
+		PissAndShitModParticleTypes.clientLoad();
 
 		PissAndShitModBlocks.clientLoad();
 		PissAndShitModScreens.load();

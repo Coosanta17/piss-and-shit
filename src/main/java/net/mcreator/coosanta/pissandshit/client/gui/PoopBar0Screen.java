@@ -7,7 +7,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.coosanta.pissandshit.world.inventory.PoopBar0Menu;
 import net.mcreator.coosanta.pissandshit.procedures.PoopBarCondition9Procedure;
@@ -23,7 +23,6 @@ import net.mcreator.coosanta.pissandshit.procedures.PoopBarCondition0Procedure;
 
 import java.util.HashMap;
 
-import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
 public class PoopBar0Screen extends AbstractContainerScreen<PoopBar0Menu> {
@@ -44,60 +43,49 @@ public class PoopBar0Screen extends AbstractContainerScreen<PoopBar0Menu> {
 	}
 
 	@Override
-	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(ms);
-		super.render(ms, mouseX, mouseY, partialTicks);
-		this.renderTooltip(ms, mouseX, mouseY);
+	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
+		this.renderBackground(guiGraphics);
+		super.render(guiGraphics, mouseX, mouseY, partialTicks);
+		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
 	@Override
-	protected void renderBg(PoseStack ms, float partialTicks, int gx, int gy) {
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		if (PoopBarCondition0Procedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("entity", entity).build())) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("piss_and_shit:textures/screens/poop_empty.png"));
-			this.blit(ms, this.leftPos + 3, this.topPos + 89, 0, 0, 16, 16, 16, 16);
+			guiGraphics.blit(new ResourceLocation("piss_and_shit:textures/screens/poop_empty.png"), this.leftPos + 3, this.topPos + 89, 0, 0, 16, 16, 16, 16);
 		}
 		if (PoopBarCondition1Procedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("entity", entity).build())) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("piss_and_shit:textures/screens/poop_lvl_1.png"));
-			this.blit(ms, this.leftPos + 3, this.topPos + 89, 0, 0, 16, 16, 16, 16);
+			guiGraphics.blit(new ResourceLocation("piss_and_shit:textures/screens/poop_lvl_1.png"), this.leftPos + 3, this.topPos + 89, 0, 0, 16, 16, 16, 16);
 		}
 		if (PoopBarCondition2Procedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("entity", entity).build())) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("piss_and_shit:textures/screens/poop_lvl_2.png"));
-			this.blit(ms, this.leftPos + 3, this.topPos + 89, 0, 0, 16, 16, 16, 16);
+			guiGraphics.blit(new ResourceLocation("piss_and_shit:textures/screens/poop_lvl_2.png"), this.leftPos + 3, this.topPos + 89, 0, 0, 16, 16, 16, 16);
 		}
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("piss_and_shit:textures/screens/poop_lvl_3.png"));
-		this.blit(ms, this.leftPos + 3, this.topPos + 89, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("piss_and_shit:textures/screens/poop_lvl_3.png"), this.leftPos + 3, this.topPos + 89, 0, 0, 16, 16, 16, 16);
 
 		if (PoopBarCondition4Procedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("entity", entity).build())) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("piss_and_shit:textures/screens/poop_lvl_4.png"));
-			this.blit(ms, this.leftPos + 3, this.topPos + 89, 0, 0, 16, 16, 16, 16);
+			guiGraphics.blit(new ResourceLocation("piss_and_shit:textures/screens/poop_lvl_4.png"), this.leftPos + 3, this.topPos + 89, 0, 0, 16, 16, 16, 16);
 		}
 		if (PoopBarCondition5Procedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("entity", entity).build())) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("piss_and_shit:textures/screens/poop_lvl_5.png"));
-			this.blit(ms, this.leftPos + 3, this.topPos + 89, 0, 0, 16, 16, 16, 16);
+			guiGraphics.blit(new ResourceLocation("piss_and_shit:textures/screens/poop_lvl_5.png"), this.leftPos + 3, this.topPos + 89, 0, 0, 16, 16, 16, 16);
 		}
 		if (PoopBarCondition6Procedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("entity", entity).build())) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("piss_and_shit:textures/screens/poop_lvl_6.png"));
-			this.blit(ms, this.leftPos + 3, this.topPos + 89, 0, 0, 16, 16, 16, 16);
+			guiGraphics.blit(new ResourceLocation("piss_and_shit:textures/screens/poop_lvl_6.png"), this.leftPos + 3, this.topPos + 89, 0, 0, 16, 16, 16, 16);
 		}
 		if (PoopBarCondition7Procedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("entity", entity).build())) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("piss_and_shit:textures/screens/poop_lvl_7.png"));
-			this.blit(ms, this.leftPos + 3, this.topPos + 89, 0, 0, 16, 16, 16, 16);
+			guiGraphics.blit(new ResourceLocation("piss_and_shit:textures/screens/poop_lvl_7.png"), this.leftPos + 3, this.topPos + 89, 0, 0, 16, 16, 16, 16);
 		}
 		if (PoopBarCondition8Procedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("entity", entity).build())) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("piss_and_shit:textures/screens/poop_lvl_8.png"));
-			this.blit(ms, this.leftPos + 3, this.topPos + 89, 0, 0, 16, 16, 16, 16);
+			guiGraphics.blit(new ResourceLocation("piss_and_shit:textures/screens/poop_lvl_8.png"), this.leftPos + 3, this.topPos + 89, 0, 0, 16, 16, 16, 16);
 		}
 		if (PoopBarCondition9Procedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("entity", entity).build())) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("piss_and_shit:textures/screens/poop_lvl_9.png"));
-			this.blit(ms, this.leftPos + 3, this.topPos + 89, 0, 0, 16, 16, 16, 16);
+			guiGraphics.blit(new ResourceLocation("piss_and_shit:textures/screens/poop_lvl_9.png"), this.leftPos + 3, this.topPos + 89, 0, 0, 16, 16, 16, 16);
 		}
 		if (PoopBarCondition10Procedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("entity", entity).build())) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("piss_and_shit:textures/screens/poop_lvl_10.png"));
-			this.blit(ms, this.leftPos + 3, this.topPos + 89, 0, 0, 16, 16, 16, 16);
+			guiGraphics.blit(new ResourceLocation("piss_and_shit:textures/screens/poop_lvl_10.png"), this.leftPos + 3, this.topPos + 89, 0, 0, 16, 16, 16, 16);
 		}
 		RenderSystem.disableBlend();
 	}
@@ -117,21 +105,16 @@ public class PoopBar0Screen extends AbstractContainerScreen<PoopBar0Menu> {
 	}
 
 	@Override
-	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
+	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 	}
 
 	@Override
 	public void onClose() {
 		super.onClose();
-		Minecraft.getInstance().keyboardHandler.setSendRepeatsToGui(false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-	}
-
-	public static void screenInit() {
 	}
 }

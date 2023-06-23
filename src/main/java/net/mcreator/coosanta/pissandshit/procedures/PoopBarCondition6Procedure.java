@@ -19,7 +19,7 @@ public class PoopBarCondition6Procedure {
 		Entity entity = (Entity) dependencies.get("entity");
 		if (new Object() {
 			public int getScore(String score, Entity _ent) {
-				Scoreboard _sc = _ent.getLevel().getScoreboard();
+				Scoreboard _sc = _ent.level().getScoreboard();
 				Objective _so = _sc.getObjective(score);
 				if (_so != null)
 					return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();

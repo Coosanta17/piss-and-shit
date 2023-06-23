@@ -18,6 +18,7 @@ import org.apache.logging.log4j.LogManager;
 import net.mcreator.coosanta.pissandshit.network.PissAndShitModVariables;
 import net.mcreator.coosanta.pissandshit.init.PissAndShitModTabs;
 import net.mcreator.coosanta.pissandshit.init.PissAndShitModProcedures;
+import net.mcreator.coosanta.pissandshit.init.PissAndShitModParticleTypes;
 import net.mcreator.coosanta.pissandshit.init.PissAndShitModMenus;
 import net.mcreator.coosanta.pissandshit.init.PissAndShitModItems;
 import net.mcreator.coosanta.pissandshit.init.PissAndShitModBlocks;
@@ -32,6 +33,7 @@ public class PissAndShitMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Initializing PissAndShitMod");
+		PissAndShitModParticleTypes.load();
 		PissAndShitModTabs.load();
 
 		PissAndShitModBlocks.load();

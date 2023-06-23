@@ -10,11 +10,14 @@ import net.minecraft.network.chat.Component;
 
 import net.mcreator.coosanta.pissandshit.init.PissAndShitModTabs;
 
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+
 import java.util.List;
 
 public class DriedShitBrickItem extends Item {
 	public DriedShitBrickItem() {
-		super(new Item.Properties().tab(PissAndShitModTabs.TAB_PISS_AND_SHIT_ITEMS_AND_BLOCKS).stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON));
+		ItemGroupEvents.modifyEntriesEvent(PissAndShitModTabs.TAB_PISS_AND_SHIT_ITEMS_AND_BLOCKS).register(content -> content.accept(this));
 	}
 
 	@Override

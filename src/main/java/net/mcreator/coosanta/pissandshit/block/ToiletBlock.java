@@ -4,10 +4,9 @@ package net.mcreator.coosanta.pissandshit.block;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.material.PushReaction;
-import net.minecraft.world.level.material.MaterialColor;
-import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -27,7 +26,6 @@ import net.minecraft.client.renderer.RenderType;
 import net.mcreator.coosanta.pissandshit.init.PissAndShitModBlocks;
 import net.mcreator.coosanta.pissandshit.block.entity.ToiletBlockEntity;
 
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.api.Environment;
 import net.fabricmc.api.EnvType;
@@ -36,7 +34,7 @@ import java.util.List;
 import java.util.Collections;
 
 public class ToiletBlock extends Block implements EntityBlock {
-	public static BlockBehaviour.Properties PROPERTIES = FabricBlockSettings.of(Material.DECORATION, MaterialColor.METAL).sound(SoundType.METAL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false);
+	public static BlockBehaviour.Properties PROPERTIES = BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).pushReaction(PushReaction.PUSH_ONLY);
 
 	public ToiletBlock() {
 		super(PROPERTIES);
@@ -66,12 +64,7 @@ public class ToiletBlock extends Block implements EntityBlock {
 	}
 
 	@Override
-	public PushReaction getPistonPushReaction(BlockState state) {
-		return PushReaction.PUSH_ONLY;
-	}
-
-	@Override
-	public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;

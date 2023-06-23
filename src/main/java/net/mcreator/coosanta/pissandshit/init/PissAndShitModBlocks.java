@@ -6,6 +6,7 @@ package net.mcreator.coosanta.pissandshit.init;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Registry;
 
 import net.mcreator.coosanta.pissandshit.block.ToiletBlock;
@@ -23,11 +24,11 @@ public class PissAndShitModBlocks {
 	public static Block DRIED_SHIT_BRICKS;
 
 	public static void load() {
-		TOILET = Registry.register(Registry.BLOCK, new ResourceLocation(PissAndShitMod.MODID, "toilet"), new ToiletBlock());
-		POOP = Registry.register(Registry.BLOCK, new ResourceLocation(PissAndShitMod.MODID, "poop"), new PoopBlock());
-		BLOCK_OF_SHIT = Registry.register(Registry.BLOCK, new ResourceLocation(PissAndShitMod.MODID, "block_of_shit"), new BlockOfShitBlock());
-		BLOCK_OF_DRIED_SHIT = Registry.register(Registry.BLOCK, new ResourceLocation(PissAndShitMod.MODID, "block_of_dried_shit"), new BlockOfDriedShitBlock());
-		DRIED_SHIT_BRICKS = Registry.register(Registry.BLOCK, new ResourceLocation(PissAndShitMod.MODID, "dried_shit_bricks"), new DriedShitBricksBlock());
+		TOILET = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(PissAndShitMod.MODID, "toilet"), new ToiletBlock());
+		POOP = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(PissAndShitMod.MODID, "poop"), new PoopBlock());
+		BLOCK_OF_SHIT = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(PissAndShitMod.MODID, "block_of_shit"), new BlockOfShitBlock());
+		BLOCK_OF_DRIED_SHIT = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(PissAndShitMod.MODID, "block_of_dried_shit"), new BlockOfDriedShitBlock());
+		DRIED_SHIT_BRICKS = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(PissAndShitMod.MODID, "dried_shit_bricks"), new DriedShitBricksBlock());
 	}
 
 	public static void clientLoad() {

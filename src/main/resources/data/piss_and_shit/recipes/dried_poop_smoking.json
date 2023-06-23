@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smoking",
-  "experience": 5,
-  "cookingtime": 100,
-  "ingredient": {
-    "item": "piss_and_shit:block_of_shit"
-  },
-  "result": "piss_and_shit:block_of_dried_shit"
-}

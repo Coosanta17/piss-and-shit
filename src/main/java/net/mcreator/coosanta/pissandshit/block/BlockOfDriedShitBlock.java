@@ -1,8 +1,7 @@
 
 package net.mcreator.coosanta.pissandshit.block;
 
-import net.minecraft.world.level.storage.loot.LootContext;
-import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
@@ -14,7 +13,6 @@ import net.minecraft.client.renderer.RenderType;
 
 import net.mcreator.coosanta.pissandshit.init.PissAndShitModBlocks;
 
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.api.Environment;
 import net.fabricmc.api.EnvType;
@@ -23,7 +21,7 @@ import java.util.List;
 import java.util.Collections;
 
 public class BlockOfDriedShitBlock extends Block {
-	public static BlockBehaviour.Properties PROPERTIES = FabricBlockSettings.of(Material.STONE).sound(SoundType.GRAVEL).strength(0.6666666666666666f, 5f);
+	public static BlockBehaviour.Properties PROPERTIES = BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(0.6666666667f, 5f);
 
 	public BlockOfDriedShitBlock() {
 		super(PROPERTIES);
@@ -35,7 +33,7 @@ public class BlockOfDriedShitBlock extends Block {
 	}
 
 	@Override
-	public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
